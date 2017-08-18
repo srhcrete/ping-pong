@@ -1,0 +1,36 @@
+@font-face {font-family: batman; src: url('batmfo.ttf'); }
+
+.jumbotron {
+  background-color: black;
+  color: white;
+
+  text-align: center;
+  font-family: batman;
+}
+.jumbotron h1 {
+  font-size: 6vw;
+}
+
+.sidebar {
+  background-color: yellow;
+  width: 20%;
+  height: 100vh;
+  margin-top: -5%;
+  text-align: center;
+}
+
+#pingPong {
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  width: ;
+}
+body {
+  background-image: url('pingPong.jpg');
+}
+.container {
+  float: right;
+  width: 90%;
+  background-color: black;
+  color: white;
+}

@@ -10,22 +10,34 @@
   </head>
   <body>
     <div class='fluid-container'>
-      <form id='pingPong' class='form-control'>
-        <div class='form-group'>
-          <label for='userInputNumber'>Please enter a number</label>
-          <input id='userInputNumber' type='number' name='userInputNumber'>
-        </div>
-        <button type='submit' class='btn btn-primary'>Submit</button>
-      </form>
-    </div>
-    <div class='container'>
-      <div id='numberList'>
-        <ul>
-        </ul>
+      <div class='jumbotron'>
+        <h1>Ping Pong</h1>
       </div>
-      <div class="well">
-           <button type="button" class="btn btn-block" id="refresh">Refresh the page to see what other numbers look like in 'ping-pong'</button>
-         </div>
+      <div class='container'>
+        <form id='pingPong' class='form-control'>
+          <div class='form-group'>
+            <label for='userInputNumber'>Please enter a number</label>
+            <input id='userInputNumber' type='number' name='userInputNumber'>
+          </div>
+          <button type='submit' class='btn btn-primary'>Submit</button>
+        </form>
+        <div id='numberList'>
+          <ul>
+
+          </ul>
+        </div>
+         <button type="button" class="btn btn-block" id="refresh">Refresh the page to see what other numbers look like in 'ping-pong'</button>
+      </div>
+      <div class="sidebar">
+        <h2 id="about">All about Ping Pong</h2>
+        <h4>Created by:</h4>
+        <h6>Sarah Lindmar</h6>
+        <h4>GitHub Username/URL:</h4>
+        <h6><a href="https://github.com/srhcrete">srhcrete</a></h6>
+        <h4>Week 3 project for:</h4>
+        <h6>Epicodus Intro to Programming</h6>
+
+      </div>
     </div>
   </body>
 </html>
