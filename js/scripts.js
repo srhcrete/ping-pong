@@ -12,7 +12,6 @@ for (var i=1; i <= n; i++) {
   //**function pingPong checks each item in a array for a ping-pong number case, applies the rule for the case, and prints the results to <ul>
 var resultsArrs = [];
 function pingPong(i) {
-  $('#numberList')
   if (i % 15 === 0) {
     i = 'Ping-Pong';
     $('#numberList').append('<li>' + i + '</li>');
@@ -27,12 +26,15 @@ function pingPong(i) {
           }
 };
 
-
 //User Interface Logic
 $(document).ready(function() {
   $('#pingPong').submit(function(event) {
     event.preventDefault();
     var n = $('#userInputNumber').val();
     numberArray(n);
+
+    $( "#refresh" ).click(function() {
+   location.reload(true);
+   });
   });
 });
