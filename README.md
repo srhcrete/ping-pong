@@ -11,9 +11,17 @@ _This web app will take any number input by the user and return a range of numbe
 ## Specifications
 
 * _Take any number input by the user and return a range of numbers from 1 up to the chosen number._
+  * _Input: 3_
+  * _Output: 1, 2, 3_
 * _Numbers divisible by 3 are replaced with 'ping'_
+  * _Input: 9_
+  * _Output: "ping"_
 * _Numbers divisible by 5 are replaced with 'pong'_
+  * _Input: 10_
+  * _Output: "pong"_
 * _Numbers divisible by 15 are replaced with 'ping-pong'_
+  * _Input: 30_
+  * _Output: "ping-pong_
 
 ## Installation
 
