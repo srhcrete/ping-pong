@@ -1,15 +1,23 @@
 //Business Logic
 
+function numberArray(n) {
+var arrs = [];
+for (var i=0; i <= n; i++) {
+  arrs.push(i);
+  alert(arrs);
+}
+};
+
 function pingPong(n) {
-//for (var i=0; i <= n; i++) {
   if (n % 15 === 0) {
     alert('Ping-Pong');
   } else if (n % 3 === 0) {
     alert('Ping');
   } else if (n % 5 === 0) {
       alert('Pong');
+  } else {
+    alert(n);
   }
-//}
 };
 
 
@@ -39,5 +47,6 @@ $(document).ready(function() {
     var n = $('#userInputNumber').val();
     //alert(n);
     pingPong(n);
+    numberArray(n);
   });
 });
