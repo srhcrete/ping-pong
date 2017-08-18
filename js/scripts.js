@@ -1,43 +1,45 @@
 //Business Logic
 
-function numberArray(n) {
+  //**function numberArray pushes integers from 1 up to the input number into empty array
 var arrs = [];
-for (var i=0; i <= n; i++) {
+function numberArray(n) {
+for (var i=1; i <= n; i++) {
   arrs.push(i);
-  alert(arrs);
+  pingPong(i);
 }
+alert(arrs);
+
 };
 
-function pingPong(n) {
-  if (n % 15 === 0) {
-    alert('Ping-Pong');
-  } else if (n % 3 === 0) {
-    alert('Ping');
-  } else if (n % 5 === 0) {
-      alert('Pong');
-  } else {
-    alert(n);
-  }
+  //**function pingPong alerts according to Ping-Pong rules from number input
+var resultsArrs = [];
+function pingPong(i) {
+  if (i % 15 === 0) {
+    i = 'Ping-Pong';
+    resultsArrs.push(i);
+    //alert(i);
+  } else if (i % 3 === 0) {
+      i = 'Ping';
+      //alert(i);
+      resultsArrs.push(i);
+    } else if (i % 5 === 0) {
+      i = 'Pong';
+      //alert(i);
+      resultsArrs.push(i);
+        } else {
+          //alert(i);
+          resultsArrs.push(i);
+          }
+  //alert(resultsArrs);
 };
 
+listResults(resultsArrs[i]);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  //**function results appends the results of pingPong function to the <ul> in the html
+function listResults(result) {
+    $('#numberList').append('<li>' + result + '</li>');
+};
 
 
 //User Interface Logic
@@ -45,8 +47,10 @@ $(document).ready(function() {
   $('#pingPong').submit(function(event) {
     event.preventDefault();
     var n = $('#userInputNumber').val();
-    //alert(n);
-    pingPong(n);
+    //pingPong(n);
     numberArray(n);
+    alert(resultsArrs);
+    //listResults(resultsArrs);
+    //results(arrs);
   });
 });
