@@ -3,7 +3,6 @@
   //**function numberArray pushes inegers from 1 up to the input number into empty array and applies pingPong function to each item in the array
 var arrs = [];
 function numberArray(n) {
-  //$('#numberList ul').empty(); trying to empty div first when numberArray function is called
   for (var i=1; i <= n; i++) {
     arrs.push(i);
     pingPong(i);
@@ -13,7 +12,6 @@ function numberArray(n) {
   //**function pingPong checks each item in a array for a ping-pong number case, applies the rule for the case, and prints the results to <ul>
 var resultsArrs = [];
 function pingPong(i) {
-  //$('#numberList ul').empty(); trying to empty div first when pingPong function is called
     if (i % 15 === 0) {
       i = 'Ping-Pong';
       $('#numberList').append('<li>' + i + '</li>');
@@ -33,6 +31,7 @@ $(document).ready(function() {
   $('#pingPong').submit(function(event) {
     event.preventDefault();
     var n = $('#userInputNumber').val();
+    $('#numberList').empty();
     numberArray(n);
     $( "#refresh" ).click(function() {
    location.reload(true);
